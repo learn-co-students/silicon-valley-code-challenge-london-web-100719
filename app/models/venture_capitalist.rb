@@ -39,11 +39,8 @@ class VentureCapitalist
     end
 
     def invested(domain)
-        funding_rounds.reduce(0) do |sum, round|  
-            if round.startup.domain == domain
-                sum += round.amount
-            end 
-        end
+        array = funding_rounds.select {|round| round.startup.domain == domain}
+        array.map {|round| round.amount}.sum
     end
 
 end

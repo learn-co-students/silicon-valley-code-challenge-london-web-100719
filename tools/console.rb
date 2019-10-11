@@ -5,8 +5,8 @@ def reload
 end
 
 startup1 = Startup.new("star - tup - uan", "founder", "@domain.com")
-startup2 = Startup.new("star - tup - uan", "founder", "@domain.com")
-startup3 = Startup.new("star - tup - uan", "founder", "@domain.com")
+startup2 = Startup.new("star - tup - uan", "founder", "@2domain.com")
+startup3 = Startup.new("star - tup - uan", "founder", "@3domain.com")
 vc2 = VentureCapitalist.new("vc1", 100000000000000000)
 vc3 = VentureCapitalist.new("vc2", 100000000000000000)
 vc4 = VentureCapitalist.new("vc3", 1000000)
